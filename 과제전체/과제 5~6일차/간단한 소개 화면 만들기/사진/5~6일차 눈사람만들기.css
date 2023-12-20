@@ -1,0 +1,54 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d4d3ff;
+}
+
+/* 눈사람 스타일 */
+.snowman {
+    position: relative;
+}
+
+.body,
+.head {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%; 
+    background-color: #ffffff;
+}
+
+.head {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: -70px;
+    left: 15px;
+}
+
+.eye {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+}
+
+.eye-left {
+    top: -50px;
+    left: 30px;
+}
+
+.eye-right {
+    top: -50px;
+    left: 50px;
+}
+
+/* 눈사람의 눈 각도 조절 */
+.eye {
+    transform: rotate(45deg);
+    z-index: 1;
+}

@@ -1,0 +1,52 @@
+*{
+    text-align: center;
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+html{
+    background-color: rgb(208, 177, 214);
+}
+
+#outer_div{
+    text-align: right;
+    height: 100px;
+    width: 400px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(198, 139, 209);
+    line-height: 28px;
+    font-size: 20px;
+
+}
+#date{
+    text-align: right;
+}
+h1{
+    font-size: 50px;
+    color: black;
+
+}
+
+hr{
+    color: rgb(198, 139, 209);
+    border: none;
+}
+
+img{
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+.diary01{
+    font-size: 30px;
+}
+
+#inner_div{
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+    border: 2px solid rgb(220, 105, 105);
+    border-radius: 50px;
+    box-shadow: 0 25px 40px rgba(57, 16, 34, 0.3), 0 20px 15px rgba(0, 0, 0, 0.22);
+}

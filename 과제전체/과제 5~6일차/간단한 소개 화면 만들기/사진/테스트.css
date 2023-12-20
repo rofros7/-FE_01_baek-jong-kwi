@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+}
+body{
+  background-color: rgb(42, 116, 165);
+  height:auto;
+  margin: 0;
+}
+.cotaioner{
+  background-color: white;
+  height: 100px;
+  width: 100px;
+}
+.cotaioner{
+  color: black;
+}
+  }
+  
+  /*.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(228, 141, 9); /* 회색 배경색 */ 
+  }
+  .head{
+    display;
+    width: 50%;
+
+    background-color: blanchedalmond;
+   
+  }
+  .head{
+    position: relative;
+    top: -200px;
+    
+  }
+  
+  p {
+    color: white; /* 텍스트 색상 */
+    text-align: center;
+  }
+  

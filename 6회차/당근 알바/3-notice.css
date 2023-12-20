@@ -1,0 +1,56 @@
+.notice{
+    max-width: 48rem;
+    margin: auto;
+}
+.notice_title{
+    font-size: 1.625rem;
+    margin: 3.75rem 0 2.25rem;
+    line-height: 1.5;
+}
+
+.notice_contatiner{ 
+    justify-content: space-between;
+    flex-wrap: wrap;  /* 플렉스 아이템이 여러줄로도 배치될 있게끔! */
+    margin-left: 1rem
+}
+
+.notice_item{
+    padding: 1.25rem 0;
+    flex-basis: 48%; /* 플렉스 아이이템의 크기를 정한다 */
+}
+.notice_thumb{
+    min-width: 6.75rem; /* 기본에서 수치보다 작아질수 없다 */
+    min-height: 6.75rem;
+    background-color: blanchedalmond;
+}
+
+.notice_contatiner_title{
+    line-height: 1.32;
+    font-size: 1.125rem;
+}
+
+.notice_contatiner_address{
+    line-height: 1.4;
+    font-size: .875rem;
+    color: #aeaeae;
+}
+.notice_contatiner_pay{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .notice{
+        padding: 0 1rem 1.25;
+    }
+    .notice_title{
+        font-weight: 700;
+        line-height: 1.3;
+        font-size: 1.25rem;
+        margin: 2.5rem 0 1.5rem;
+    }
+    .notice_contatiner{
+        display: block;  /* 플렉스 -> 블럭레벨로 변경 */
+    }
+}
+    
+    

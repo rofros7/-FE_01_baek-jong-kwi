@@ -15,10 +15,15 @@
             background-color: teal;
         }
         /*
-        .parent:nth-child(1) > .child{transform: translate(30px, 50px);}
+         의사클래스 
+        .parent:nth-child(1) > .child{transform: translate(30px, 50px);} 
+                                                 원하는 값만 큼 자리 이동
         .parent:nth-child(2) > .child{transform: scale(1.2, 0.8);}
+                                                 x축과 y축의 n배 
         .parent:nth-child(3) > .child{transform: skew(45deg);}
+                                                 비트는 거 (각도)
         .parent:nth-child(3) > .child{transform: rotate(70deg);}
+                                                 회전은 시계방향으로
         */
 
         .parent:nth-child(4) > .child:hover{
@@ -26,12 +31,16 @@
             height: 300px;
             background-color: rgb(81, 255, 0);
             transition: background-color 2s 0s linear,
-            height 2s linear;
+            height 2s 0s linear;
             /*
-            transition-property: width;
+            변화 : 속성 값 변경
+            transition-property: width; 나는 위스가 변할때 변형
+                       
             transition-duration: 5s;
+                       시간
             transition-delay: 2s;
-            transition-timing-function: ease;
+            transition-timing-function: ease-in;   
+                                        linear; 
             */
         }
 

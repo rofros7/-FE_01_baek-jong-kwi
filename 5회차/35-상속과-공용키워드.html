@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .list{
+
+        /* 상속 되는 애 */
+        color: brown;
+        font-style: italic;
+        font-weight: 900;
+
+        /* 상속 안 되는 애 */
+        border: 3px dashed green;
+        padding: 0;
+    }
+    /* 공용 키워드 : 모든 스타일 속성에 대해서 줄수 있다
+        inherit 상속받는다
+        initial 상속을 받더라도 브라우저가 제공하는 기본 값
+        unset : 상속 받을 것이 받고 없으면 안받는다.
+    */
+    
+    ul{
+        border: inherit; 
+    }
+
+    li:nth-child(3){
+        color: initial;
+        font-size: initial;
+        font-weight: initial;
+    }
+</style>
+<body>
+    <body>
+        <h2>마라톤 대회 참가 기록</h2>
+        <div class="list">
+            <ul>
+                <li>새해맞이 대전 마라톤 대회</li>
+                <li>서울 국제 마라톤 대회</li>
+                <li>대전 대청호 벚꽃길 마라톤 대회</li>
+                <li>대전 3대 하천 마라톤 대회</li>
+            </ul>
+        </div>
+    </body>
+</body>
+</html>

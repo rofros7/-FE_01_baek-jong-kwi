@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더덕마켓</title>
+    <style>
+        *{
+          box-sizing: border-box;   
+        }
+        html{
+            font-size: 16px;
+        }
+        body{
+            margin: 0;
+        }
+        .flex{
+            display: flex;
+        }
+        .main{
+            padding: 4rem 0 5rem;
+        }
+    </style>
+    <link href="1-header.css" rel="stylesheet">
+    <link href="2-info.css" rel="stylesheet">
+    <link href="3-notice.css" rel="stylesheet">
+    <link href="4-banner.css" rel="stylesheet">
+    <link href="5-footer.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content flex">
+                <div class="header-content_logo">더덕마켓</div>
+                <nav class="header-content_nav flex">
+                    <ul>
+                        <li>중고거래</li>
+                        <li>동네가게</li>
+                        <li class="active">알바</li>
+                        <li>부동산 직거래</li>
+                        <li>중고차 직거래</li>
+                    </ul>
+                </nav>
+                <div class="header-content_input flex">
+                    <span class="icon glass">
+                        <input type="button" value="&#128269;">
+                    </span>
+                    <span>
+                        <input type="text" class="search" placeholder="물품이나 동네를 검색해보세요">
+                    </span>
+                    <span class="icon menu">
+                        <input type="button" value="&#9776;">
+                    </span>
+                    <span>
+                        <input type="button" class="chat" value="채팅하기"> 
+                    </span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="info">
+                <div class="info_text">
+                    <h1>우리 동네에서 찾는<br>더덕알바</h1>
+                    <p>걸어서 10분 거리의<br>동네 알바들 여기 다 있어요</p>
+                </div>
+            </section>
+
+            <section class="notice">
+                <h2 class="notice_title">인기 더덕 알바</h2>
+                <div class="notice_contatiner flex">
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="banner flex">
+                    <div class="banner_text">더덕알바 이용방법이 궁금하면 <br> 지금 바로 알아보세요!</div>
+                    <button class="banner_button">이용방법 알아보기</button>
+                </div>
+
+                <div class="notice_contatiner flex">
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                    <article class="notice_item flex"> 
+                        <!-- article 공고 한칸 / 어떤 섹션 안에서 항목 하나씩 * 주요 콘텐츠 하나 -->
+                        <div class="notice_thumb"></div>    <!--  이미지 -->
+                        <div class="notice_contatiner">
+                            <div class="notice_contatiner_title">더덕마켓 고객센터 단기계약직 모집(1달 계약직)</div>
+                            <div class="notice_contatiner_address">주식회사 더덕서비스 - 대전 광역시 대덕구 석복동</div>
+                            <div class="notice_contatiner_pay">월급 3,000,000</div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="banner flex">
+                    <div class="banner_text">더덕알바 이용방법이 궁금하면 <br> 지금 바로 알아보세요!</div>
+                    <button class="banner_button">이용방법 알아보기</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer_container">
+                <section class="footer_menu">
+                    <div class="footer_apps">
+                        <div class="footer_appdown">더덕마켓 앱 다운로드</div>
+                        <div class="footer_appbtn flex">
+                            <button>App Store</button>
+                            <button>Goole play</button>
+                        </div>
+                    </div>
+                    <nav class="footer_nav flex">
+                        <ul>
+                            <li>중고거래</li>
+                            <li>동네가게</li>
+                            <li>더덕알바</li>
+                            <li>부동산 직거래</li>
+                            <li>중고차 직거래</li>
+                        </ul>
+                        <ul>
+                            <li>더덕비지니스</li>
+                            <li>채팅하기</li>
+                        </ul>
+                        <ul>
+                            <li>자주 묻는 질문</li>
+                            <li>회사 소개</li>
+                            <li>인재 채용</li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="footer_info">
+                    <div>
+                        <strong>대표</strong> 강윤호 ㅣ <strong> 사업자번호</strong> 123-45-00678
+                    </div>
+                    <div>
+                        <strong>직업정보제공사업 신고번호</strong> 2023-대전대덕-0011
+                    </div>
+                    <div>
+                        <storng>주소</storng>대전 광역시 대덕구 석봉동 1길 1, 101호 (대덕서비스)
+                    </div>
+                    <p>
+                        <strong>이용약관</strong>&nbsp; &nbsp;
+                        <strong style="color:black">개인정보처리방침</strong>&nbsp; &nbsp;
+                        <strong>위치기반서비스 이용약관</strong> &nbsp; &nbsp;
+                        <storng>이용자보호 비전과 계획</storng> &nbsp; &nbsp;
+                    </p>
+                </section>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

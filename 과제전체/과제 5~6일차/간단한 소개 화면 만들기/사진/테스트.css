@@ -1,47 +1,109 @@
 *{
   box-sizing: border-box;
-}
-html{
-  height: 100%;
+  background-color:bisque;
+  background-color: a;
 }
 body{
-  background-color: rgb(42, 116, 165);
-  height:auto;
-  margin: 0;
-}
-.cotaioner{
-  background-color: white;
-  height: 100px;
-  width: 100px;
-}
-.cotaioner{
-  color: black;
-}
-  }
-  
-  /*.container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(228, 141, 9); /* 회색 배경색 */ 
-  }
-  .head{
-    display;
-    width: 50%;
+  box-sizing: border-box;
+  width: 1200px;
+  height: 300px;
+  border-radius: 20px;
+  margin: 20px;
+  background-image: linear-gradient(to right, aquamarine 20%, white 20%);
+  position: relative;
 
-    background-color: blanchedalmond;
-   
-  }
-  .head{
-    position: relative;
-    top: -200px;
-    
-  }
+ 
+}
+
+.left{
+  box-sizing: border-box;
+  margin: 50px;
+  border-radius: 20px;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: left;
+  float: left;
+  background-color: transparent;
+  /*overflow 관련*/
+  position: absolute;
+  overflow: scroll;
+  height: 200px;
+
+  font-size: 13px;
+ 
+}
+.left > h1, p, ul, .left>ul>li{
+  margin:0;
+  margin-bottom: 10px;;
+  display: inline-block;
+  background-color: transparent;
+}
+.left > .left_01{
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  background-color: transparent;
+}
+.left > .left_02{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+
+  font-family: 'Gamja Flower', sans-serif;
+}
+.left> .left_03{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: transparent;
+
+  position: absolute;
+}
+
+
+.right{
+  float: left;
+  padding-left: 300px;
+  padding-top: 50px;
+  height: 200px;
+  display: flexbox;
+  flex-direction: row;
+  justify-content: right;
+  background-color: transparent;
+
+  font-size: 15px;
+
+  position: absolute;
+}
+.right > p, ul, .right>ul>li {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.right > .right_01{
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  background-color: transparent;
+
   
-  p {
-    color: white; /* 텍스트 색상 */
-    text-align: center;
-  }
-  
+  font-family: 'Nanum_Pen_Script','Cute_Font', 'Single_Day', monospace, 'Gamja_Flower', 'Gaegu';
+}
+.right > .right_02{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+  font-family: 'Nanum_Pen_Script','Cute_Font', 'Single_Day', monospace, 'Gamja_Flower', 'Gaegu';
+}
+.right > .right_03{
+  display: flex;
+  flex-direction: column;
+  justify-content: bottom;
+  background-color: transparent;
+
+  font-family: 'Single Day', cursive;
+}

@@ -1,0 +1,74 @@
+.footer{
+    color: #515255;
+    border-top: 1px solid #171618; /* 라인이 안그려진다 */
+    padding: 0 1rem;
+}
+
+.footer_container{
+    max-width: 48rem;
+    margin: auto;
+}
+
+.footer_menu{
+    padding: 3rem 0; 
+}
+.footer_apps{
+    float: right;
+}
+
+.footer_appdown{
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+.footer_appbtn{
+    width: 18.75rem;
+    justify-content: space-between;
+}
+.footer_appbtn button{
+    width: 48%;
+    height: 2.75rem;
+    padding: 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer_nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 33%;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-size: 0.875rem;
+}
+.footer_nav ul:nth-child(3){
+    margin-right: 15%;
+}
+.footer_nav ul li{
+    margin-bottom: 1rem;
+}
+
+.footer_info{
+    padding: 1.5rem 0 6.25rem;
+    border-top: 1px solid #c3c4c7;
+    color:#868b94;
+    line-height: 1.5;
+    font-size: .813re;
+}
+
+@media screen and (max-width: 768px) { 
+    .footer_apps{
+        float: none;
+        display: flex;
+        margin-bottom: 1.25rem;
+    }
+
+    .footer_appbtn{  /* 버튼이 없어지지 않는다 */
+        display: none;
+    }
+}
+    

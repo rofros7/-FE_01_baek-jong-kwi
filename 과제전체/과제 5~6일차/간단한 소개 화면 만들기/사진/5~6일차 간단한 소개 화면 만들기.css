@@ -1,0 +1,52 @@
+
+body{
+    display: flex; 
+    flex-direction: column;
+    margin: 0;
+    background-color: #cceeff; /* 배경색 설정 */      
+}
+.top-head{
+    font-size: 20px;
+}
+.top-body{
+    font-size: 20px;
+}
+.top-left{
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    background-color: rgb(255, 205, 239);
+    width: 300px    
+}
+#aa{
+    margin: 20px;
+    
+}
+
+.top-right{
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-top: 1px;  
+    background-color: rgb(198, 136, 42);
+    position: relative;
+    left: 300px;
+    bottom: 301px;
+    width: 1050px;
+    height: 300px;
+    border-radius: 0 20px 20px 0;
+
+}
+.top-foter-img{
+    float: left;
+  }
+
+.top-text {
+    margin-left: 20px; 
+}
+
+
+.top-foter-img {
+    width: 20px; 
+    height: auto;
+}

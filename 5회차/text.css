@@ -1,0 +1,33 @@
+.chat-screen_texts{
+    padding: 0;
+    list-style-type: none;
+}
+.chat-screen_texts > .text{
+    background-color: rgb(66, 196, 235);
+    width: 280px;
+    height: 50px;
+    margin: 0 0 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    line-height: 30px;
+    position: relative;
+    left: 20px;
+}
+.chat-screen_texts > .text::after{
+    content:"";
+    border-right: 16px solid rgb(66, 196, 235);
+    border-bottom: 16px solid transparent; /* 색상 투명하게 지정 */
+    position: absolute;
+    top: 10px;
+    left: -10px;
+}
+
+.chat-screen_texts > .text:hover{
+    background-color: aliceblue;
+    transition: background-color 1500ms 200ms ease-in;
+}
+
+.chat-screen_texts > .text:hover::after{
+    border-right: 16px solid aliceblue;
+    transition: border-right 1500ms 200ms ease-in;
+}

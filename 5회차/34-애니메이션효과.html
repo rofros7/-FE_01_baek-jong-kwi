@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .eyes{
+            width: 640px;
+            margin: auto;
+        }
+       .eye{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+            border-radius: 100px;
+            position: relative;
+        }
+        .eye:nth-child(1) { float: left }
+        .eye:nth-child(2) { float: left }
+        
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 25px;
+            position: absolute;
+            top: 80px;
+            left: 30px;
+
+            animation-name: moving;
+            animation-duration: 2s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            /* animation: moving 2s 0s linear infinite alternate; 
+               단축 속성으로 가능 / 하위 속성을 잘 구분해서 
+               시간은 앞에 있는 것이 duration 
+                    뒤에 있는 것이 delay 
+        }
+
+        .ball:hover{ /* 커서를 가져다 놓으면 */
+            animation-play-state: paused; /* 멈춘다 */
+            /* animation-play-state: runing; 움직인다 */
+        }
+        @keyframes moving {
+            from{ left: 30px; }
+            to{ left : 120px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="eyes">
+        <div class="eye">
+            <div class="ball"></div>
+        </div>
+        <div class="eye">
+            <div class="ball"></div>
+        </div>
+    </div>
+</body>
+</html>

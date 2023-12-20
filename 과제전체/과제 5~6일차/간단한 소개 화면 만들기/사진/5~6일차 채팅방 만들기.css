@@ -1,0 +1,23 @@
+/* 전체적인 세팅부터 */
+*{
+    box-sizing: border-box;
+    /* width or hight 가 정해지면 */
+}
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: 0;
+}
+.container{
+    height: 100%;
+    background-color:cornsilk
+}
+
+/* 스크린 크기
+ */
+ .chat-screen{
+    height: calc(100% - 120px)
+ }

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다크모드</title>
+</head>
+<body>
+
+    <button id="whiteButton">White</button>
+    <button id="blackButton">Black</button>
+
+    <script>
+        function darkMode(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        document.getElementById('whiteButton')
+        .addEventListener('click', function() {
+        darkMode('white');
+        });
+
+        document.getElementById('blackButton')
+        .addEventListener('click', function() {
+        darkMode('black');
+        });
+    </script>
+
+</body>
+</html>

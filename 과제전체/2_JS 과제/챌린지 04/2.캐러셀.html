@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>캐러셀 이미지 슬라이드</title>
+    <link href="2.캐러셀.css" rel="stylesheet">
+</head>
+<body>
+    <div class="all">
+        <div class="container">
+            <div class="inner">
+                <img src="1.jpg" alt="이미지 1">
+            </div>
+            <div class="inner">
+                <img src="2.jpg" alt="이미지 2">
+            </div>
+            <div class="inner">
+                <img src="3.jpg" alt="이미지 3">
+            </div>
+        </div>
+    </div>
+    <div class="btn">
+        <button class="darkMode" type="button"> ● </button>
+            <!-- 안에 점만 키우고 싶은데 안되요 -->
+         
+        <button class="화" type="button">화</button>
+        <button class="이" type="button">이</button>
+        <button class="팅" type="button">팅</button>
+        <button class="다음" type="button">다음</button>
+    </div>
+    </div>
+    <script>
+
+        // 마우스 클릭이 되면 검정 클릭이 떨어지면 기본값으로 
+        const darkModeButton = document.querySelector('.darkMode');
+
+        darkModeButton.addEventListener('mousedown', function() {
+            document.body.style.backgroundColor = 'black';
+        });
+
+        darkModeButton.addEventListener('mouseup', function() {
+            document.body.style.backgroundColor = ''; // 기본값으로 돌아가게 합니다.
+        });
+
+        // 선택 값에 따른 이미지 변환
+        // translateX 의 값으로 크기 조정 
+        document.querySelector('.화').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 'translateX(0)';
+        });
+
+        document.querySelector('.이').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 'translateX(-100vw)';
+        });
+
+        document.querySelector('.팅').addEventListener('click', function(){
+            document.querySelector('.container').style.transform = 'translateX(-200vw)';
+        });
+
+        // 다음 이미지로 슬라이드 
+        const container = document.querySelector('.container');
+        const images = document.querySelectorAll('.inner');
+        let currentIndex = 0;
+        const slideWidth = 100; // 이미지 한 장의 너비
+
+        document.querySelector('.다음').addEventListener('click', function() {
+            currentIndex = (currentIndex + 1) % images.length;
+            const slideAmount = -1 * currentIndex * slideWidth;
+            container.style.transform = `translateX(${slideAmount}vw)`;
+        });
+
+    </script>
+</body>
+</html>

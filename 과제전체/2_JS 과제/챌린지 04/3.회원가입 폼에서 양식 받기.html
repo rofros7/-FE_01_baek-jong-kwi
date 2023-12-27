@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OZ 초격차 회원가입</title>
+    <style>
+    * {
+        text-align: center;
+        margin-top: 10px;
+        
+    }
+    body{
+        margin-top: 10px;
+
+    }
+    .container{
+        position: absolute;
+        left: 150px;
+        background-color: rgb(228, 241, 200);
+        width: 400px;
+        justify-content: center;
+        height: 560px;
+        border-radius: 10px;
+        box-shadow: 
+            10px 10px  rgba(208, 39, 39, 0.5),
+            20px 20px  rgba(129, 224, 21, 0.5),
+            30px 30px  rgba(29, 64, 204, 0.5);
+
+            /* 오른쪽, 밑에, */
+
+    }
+    h1 {
+        padding-top: 30px;
+    }
+    .btn1 {
+        width: 300px;
+        height: 30px;
+        margin-top: 10px;
+    }
+    .area {
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+        margin-top: 5px;
+    }
+
+    .area option{
+        text-align: left;
+        padding-left: 100px;
+    }
+
+    .vc2{
+        margin-right: -200px;
+    }
+    .vc1{
+        margin-right: -175px;
+
+    }
+    .etpp1, .etpp2, .etpp3, .etpp4 {
+        width: 300px;
+        height: 25px;
+        text-align: left;
+        padding-left: 5px;
+    }
+    /* 전화번호 입력  */
+    /*  display: flex;
+        justify-content: space-between */
+    .tel {
+        display: flex;
+        justify-content: space-between
+       
+    }
+
+    .tel1 {
+        width: 50px;
+        height: 25px;
+        margin-left: 45px;
+    }
+    .tel2 {
+        width: 90px;
+        height: 25px;
+      
+     
+    }
+    .tel3 {
+        width: 90px;
+        height: 25px;
+        margin-right: 45px;
+      
+    }
+    .btn2 {
+        width: 100px;
+        height: 20px;
+        margin-right: 38px;
+        margin-top: 10px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+         <h1>OZ 초격차 회원가입</h1>
+         <div class="etpp">
+            <input class="etpp1" type="email" name="email" placeholder="이메일을 입력하세요"><br>
+            <input class="etpp2" type="text" name="name" placeholder="이름을 입력하세요" autocomplete="off"><br>
+            <input class="etpp3" type="password" name="pw1" placeholder="비밀번호를 입력하세요"><br>
+            <input class="etpp4" type="password" name="pw2" placeholder="비밀번호를 다시 입력하세요" required><br>
+        <div>
+            <div class="tel">
+                <input class="tel1" typ="tel" name="tel1" placeholder="010"> 
+                <span class="tel-11"> - </span>
+                <input class="tel2" type="tel" name="tel2" placeholder="1234">
+                <span class="tel-22"> - </span>
+                <input class="tel3" type="tel" name="tel3" placeholder="5678">
+            </div>
+            <br>
+            
+            <div class="vc">
+                <label class="vc1">
+                    <span>000000</span>
+                    <input type="button" class="btn2" value="인증번호 전송">
+                </label>
+                <br>
+                <label class="vc2">
+                    <span>3:00</span>
+                    <input type="button" class="btn2" value="인증 완료" disabled>
+                </label>
+            </div>
+                <br>
+            <select class="area">
+                    <option value="seoul" selected disabled >- 지역을 선택하세요</option>
+                    <option value="seoul">서울</option>
+                    <option value="busan">부산</option>
+                    <option value="incheon">인천</option>
+                    <option value="daegu">대구</option>
+                    <!-- 다른 지역들을 필요에 따라 추가 하기 -->
+            </select><br>
+            <label> 
+                <input type="radio" name="gender" value="female">여성
+                <!-- <input type="radio" name="gender" value="female" checked>여성 -->
+                <!-- radio 에 checked를 하면 선택된 화면 -->
+            </label>
+            <label>
+                <input type="radio" name="gender" value="male">남성
+            </label><br>
+            <input type="submit" class="btn1" value="가입하기">
+    </div>
+    <script>
+       const log = console.log;
+
+        document.querySelector('.btn1').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const getValue = (selector) => document.querySelector(selector).value;
+            const tel1 = getValue('.tel1');
+            const tel2 = getValue('.tel2');
+            const tel3 = getValue('.tel3');
+
+            log('이메일:', getValue('.etpp1'));
+            log('이름:', getValue('.etpp2'));
+            log('비밀번호:', getValue('.etpp3'));
+            log('비밀번호 확인:', getValue('.etpp4'));
+            log('전화번호:', `${tel1}-${tel2}-${tel3}`);
+            log('지역:', getValue('.area'));
+            log('성별:', document.querySelector('input[name="gender"]:checked').value);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+
+* {
+    box-sizing: border-box;
+}
+.all{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.container{
+    width: 300vw;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.inner{
+    width: 100vw;
+    float: left;
+}
+
+.inner img{
+    width: 700px;
+    height: 400px;
+}
+
